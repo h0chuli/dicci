@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diccionario</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>Diccionario Web</h1>
+    <input type="text" placeholder="Buscar..." id="searchInput">
+    <button onclick="search()">Buscar</button>
+  </header>
+  <main>
+    <div id="searchResults"></div>
+    <div id="addWordSection" style="display: none;">
+      <h2>Agregar Palabra</h2>
+      <input type="text" placeholder="Palabra" id="wordInput">
+      <textarea placeholder="Notas" id="notesInput"></textarea>
+      <button onclick="addWord()">Agregar</button>
+    </div>
+  </main>
+  <aside>
+    <h2>Historial de Búsqueda</h2>
+    <ul id="searchHistory"></ul>
+  </aside>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
